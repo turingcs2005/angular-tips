@@ -6,6 +6,7 @@ import { HelpComponent } from './components/help/help.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'help', component: HelpComponent },
+  { path: 'form-to-class', loadChildren: () => import('./modules/form-to-class/form-to-class.module').then(m => m.FormToClassModule) },
 ];
 
 @NgModule({

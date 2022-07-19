@@ -33,11 +33,48 @@ import { MatTreeModule } from '@angular/material/tree';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DateComponent } from './form-controls/date/date.component';
+import { InputComponent } from './form-controls/input/input.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    DateComponent,
+    InputComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule, 
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatInputModule,
+    MatCardModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule,
+    MatDialogModule,
+    MatTooltipModule,
+    MatSnackBarModule,
+    MatListModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatStepperModule,
+    MatProgressSpinnerModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatTabsModule,
+    MatGridListModule,
+    MatSlideToggleModule,
+    MatTreeModule,
+
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   exports: [
     MatToolbarModule,
