@@ -38,3 +38,10 @@
     ></app-input>
 
 </form>
+
+<br>
+<mat-divider></mat-divider>
+<br>
+
+<div>Full name: {{ purchase.fullName }}</div>
+<div>Total purchase: {{ purchase.totalPurchase | currency: 'USD': 'symbol': '1.0' }}</div>
