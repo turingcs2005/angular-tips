@@ -36,6 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DateComponent } from './form-controls/date/date.component';
 import { InputComponent } from './form-controls/input/input.component';
 
+import { CurrencyPipe } from '@angular/common';
+
 @NgModule({
   declarations: [
     DateComponent,
@@ -108,7 +110,10 @@ import { InputComponent } from './form-controls/input/input.component';
 
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
-  ]
+    HttpClientModule,
+    InputComponent,
+    DateComponent
+  ],
+  providers: [CurrencyPipe]
 })
 export class SharedModule { }

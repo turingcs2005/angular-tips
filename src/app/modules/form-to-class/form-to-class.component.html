@@ -1,1 +1,40 @@
-<p>form-to-class works!</p>
+<form [formGroup]="intakeForm" (ngSubmit)="onSubmit()">
+
+    <app-input
+        label="First Name"
+        [control]="$any(intakeForm.controls.firstName)"
+    ></app-input> &nbsp; &nbsp;
+
+    <app-input
+        label="Last Name"
+        [control]="$any(intakeForm.controls.lastName)"
+    ></app-input> &nbsp; &nbsp; 
+
+    Full Name: {{ fullName }}
+
+    <br>
+    <mat-divider></mat-divider>
+    <br>
+
+    <app-input
+        label="Apple"
+        [control]="$any(intakeForm.controls.apple)"
+        fmt="currency"
+        icon="paid"
+    ></app-input>
+
+    <app-input
+        label="Orange"
+        [control]="$any(intakeForm.controls.orange)"
+        fmt="currency"
+        icon="paid"
+    ></app-input>
+
+    <app-input
+        label="Bread"
+        [control]="$any(intakeForm.controls.bread)"
+        fmt="currency"
+        icon="paid"
+    ></app-input>
+
+</form>
